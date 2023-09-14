@@ -1,7 +1,7 @@
 import PostThread from "@/components/forms/PostThreads";
 import { fetchUser } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 
 async function Page() {
