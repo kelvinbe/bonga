@@ -1,3 +1,4 @@
+import PostThread from "@/components/forms/PostThreads";
 import { fetchUser } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/dist/server/api-utils";
@@ -10,13 +11,16 @@ async function Page() {
 
     const userInfo = await fetchUser(user.id)
 
-    if(!userInfo.onboarded) redirect('/onboarding')
+    if(!userInfo.onboarded)  redirect('/onboarding')
+
+    
+    const bbb = JSON.parse(JSON.stringify(userInfo._id))
 
     return (
     <>
-    <h1 className="head-text">Create Threads Page</h1>
+    <h1 className="head-text">Bonga Page</h1>
 
-    <PostThread userId={userInfo._id} />
+    <PostThread userId={bbb} />
     </>
     )
 

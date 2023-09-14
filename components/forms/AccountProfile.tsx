@@ -145,6 +145,8 @@ const AccountProfile = (props: IAccountProfile) => {
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
               </FormControl>
+              <FormMessage />
+
             </FormItem>
           )}
         />
@@ -163,6 +165,7 @@ const AccountProfile = (props: IAccountProfile) => {
                   {...field}
                 />
               </FormControl>
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -181,6 +184,8 @@ const AccountProfile = (props: IAccountProfile) => {
                   {...field}
                 />
               </FormControl>
+              <FormMessage />
+
             </FormItem>
           )}
         />{" "}
@@ -199,6 +204,8 @@ const AccountProfile = (props: IAccountProfile) => {
                   {...field}
                 />
               </FormControl>
+              <FormMessage />
+
             </FormItem>
           )}
         />
