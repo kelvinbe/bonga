@@ -1,6 +1,8 @@
 import AccountProfile from "@/components/forms/AccountProfile"
 import { currentUser } from "@clerk/nextjs"
 import { use, useEffect } from "react";
+import type { NextPage } from 'next';
+
 
 export async function Page ()  {
 
@@ -34,4 +36,3 @@ export async function Page ()  {
     </main>
 }
 
-export default Page
