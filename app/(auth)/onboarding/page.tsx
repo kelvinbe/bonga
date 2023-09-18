@@ -4,7 +4,7 @@ import { use, useEffect } from "react";
 import type { NextPage } from 'next';
 
 
-export async function Page ()  {
+const Page: NextPage =  ()  {
 
 
     const user = await currentUser();
@@ -35,4 +35,5 @@ export async function Page ()  {
         </section>
     </main>
 }
+export default Page
 
