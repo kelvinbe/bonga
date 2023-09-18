@@ -33,7 +33,6 @@ const Bottombar = () => {
           })}
         </div>
       </div>
-      Bottombar
     </section>
   );
 };
