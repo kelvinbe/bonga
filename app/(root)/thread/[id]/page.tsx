@@ -42,6 +42,25 @@ const page = async({params}: {params: {id: string}}) => {
         <Comment threadId={thread.id}currentUserImg={user.imageUrl} currentUserId={JSON.stringify(userInfo._id)}/>
 
     </div>
+    <div className='mt-10'>
+      {
+        thread.children.map((comment: any) => {
+            return  <ThreadCard
+            key={comment._id}
+            id={comment._id}
+            currentUserId={user.id}
+            parentId={comment.parentId}
+            content={comment.text}
+            author={comment.author}
+            community={comment.community}
+            createdAt={comment.createdAt}
+            comments={comment.children}
+            isComment={true}
+          />
+        })
+      }
+
+    </div>
 
     </section>
   )
