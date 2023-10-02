@@ -19,18 +19,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
-        
       <Topbar />
-
       <main className='flex flex-row'>
         <LeftSideBar />
         <section className='main-container'>
         <div className='w-full max-w-4xl'>
-              {children }
+        {children}
         </div>
         </section>
         <RightSideBar />

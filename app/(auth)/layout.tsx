@@ -5,8 +5,8 @@ import '../globals.css'
 
 
 export const metadata = {
-    title: 'Threads',
-    description: 'Threads Application'
+    title: 'Bonga',
+    description: 'A Bonga Application'
 }
 
 
